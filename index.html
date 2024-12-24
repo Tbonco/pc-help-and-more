@@ -171,7 +171,7 @@
                 <li><strong>Game Client (e.g., Epic Games, Origin):</strong> Other platforms like Epic Games Store or Origin are essential for their respective games.</li>
                 <li><strong>GPU Drivers:</strong> Always make sure your graphics drivers are up to date for the best performance and stability.</li>
             </ul>
-            
+
             <h3>Missing DLL Files</h3>
             <p>Sometimes, games or applications may fail to run properly because certain DLL (Dynamic Link Library) files are missing. These files contain crucial code that games need to run. Missing DLL errors can occur due to corrupted files, incomplete installations, or even incompatible game updates.</p>
             <p>If you encounter a "Missing DLL" error while trying to run a game, here’s what you can do:</p>
@@ -185,19 +185,35 @@
             <ul>
                 <li><strong>MSVCP140.dll:</strong> Part of the Visual C++ Redistributables, often missing in games that require this runtime. You can download it from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=53587" target="_blank">Microsoft's official site</a>.</li>
                 <li><strong>DirectX DLLs (e.g., d3d11.dll, d3d9.dll):</strong> Essential for rendering games. Download DirectX from the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=35" target="_blank">Microsoft DirectX End-User Runtime Web Installer</a>.</li>
-                <li><strong>vcruntime140.dll:</strong> Another part of Visual C++ Redistributables. You can download it from the same <a href="https://www.microsoft.com/en-us" target="_blank">Microsoft website</a>.</li>
+                <li><strong>vcruntime140.dll:</strong> Another part of Visual C++ Redistributables. You can download it from the same <a href="https://www.microsoft.com/en-us/download/details.aspx?id=53587" target="_blank">Microsoft's official site</a>.</li>
             </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out!</p>
+            <p>Email: <a href="mailto:lhachmiziyad@gmail.com">lhachmiziyad@gmail.com</a></p>
+            <p>Phone: <a href="tel:+212761904754">0761904754 (Morocco)</a></p>
+
+            <h3>Leave a Comment</h3>
+            <textarea rows="4" placeholder="Leave your comment here..."></textarea>
+            <br>
+            <button onclick="submitComment()">Submit Comment</button>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 PC Help Hub. All rights reserved.</p>
+        <p>&copy; 2024 PC Help Hub. All Rights Reserved.</p>
     </footer>
 
     <script>
         function toggleTheme() {
             const body = document.getElementById('theme-body');
             body.classList.toggle('light-theme');
+        }
+
+        function submitComment() {
+            alert('Thank you for your comment! We\'ll get back to you shortly.');
         }
     </script>
 </body>
