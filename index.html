@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your one-stop solution for PC help, from building and upgrading to troubleshooting and gaming tips.">
+    <title>PC Help Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            background-color: #1f1f1f;
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 2px solid #0078D4;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1c1c1c;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            border-bottom: 2px solid transparent;
+        }
+        nav a:hover {
+            border-bottom: 2px solid #0078D4;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+            background: #1f1f1f;
+            border-radius: 5px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        footer {
+            text-align: center;
+            background-color: #1f1f1f;
+            color: #ffffff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            border-top: 2px solid #0078D4;
+        }
+        button {
+            background-color: #0078D4;
+            color: #ffffff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+        textarea {
+            width: 100%;
+            background-color: #1f1f1f;
+            color: #ffffff;
+            border: 1px solid #0078D4;
+            border-radius: 3px;
+            padding: 0.5rem;
+            resize: vertical;
+        }
+        ul li a {
+            color: #0078D4;
+            text-decoration: none;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+        .light-theme {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .light-theme header, .light-theme footer {
+            background-color: #f1f1f1;
+            color: #000000;
+        }
+        .light-theme nav {
+            background-color: #f1f1f1;
+        }
+        .light-theme nav a {
+            color: #000000;
+        }
+        .light-theme .section {
+            background-color: #f9f9f9;
+            color: #000000;
+        }
+        .light-theme footer {
+            border-top: 2px solid #0078D4;
+        }
+        .light-theme button {
+            background-color: #0078D4;
+            color: #ffffff;
+        }
+        .light-theme a {
+            color: #000000;
+        }
+    </style>
+</head>
+<body id="theme-body">
+    <header>
+        <h1>PC Help Hub</h1>
+        <p>Your ultimate guide to building, upgrading, and fixing PCs!</p>
+        <button onclick="toggleTheme()">Toggle Theme</button>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#guides">Guides</a>
+        <a href="#programs">Programs</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Welcome to PC Help Hub! We are passionate about helping you make the most of your PC. Whether you're a gamer, creator, or just getting started, we provide the guidance you need to build, upgrade, and troubleshoot your computer.</p>
+        </section>
+
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Step-by-step PC building guides.</li>
+                <li>Hardware and software troubleshooting.</li>
+                <li>Upgrade recommendations tailored to your budget.</li>
+                <li>Gaming PC optimization tips.</li>
+                <li>How to choose the right GPU for your needs.</li>
+                <li>What CPUs your motherboard can handle.</li>
+                <li>Tips on improving airflow and cooling for better performance.</li>
+            </ul>
+        </section>
+
+        <section id="guides" class="section">
+            <h2>Popular Guides</h2>
+            <ul>
+                <li><a href="#">How to Build a Budget Gaming PC</a></li>
+                <li><a href="#">Fixing No Display Issues</a></li>
+                <li><a href="#">Top GPUs for Gaming</a></li>
+                <li><a href="#">Optimizing Your PC for High-Performance Gaming</a></li>
+                <li><a href="#">Choosing the Right GPU and CPU Combo</a></li>
+                <li><a href="#">Best Games for Your PC Configuration</a></li>
+            </ul>
+        </section>
+
+        <section id="programs" class="section">
+            <h2>Programs You Need to Run Games</h2>
+            <p>Before playing a game, ensure that you have the necessary programs and frameworks installed to ensure optimal performance and compatibility:</p>
+            <ul>
+                <li><strong>DirectX:</strong> Essential for many games to run smoothly, providing enhanced graphical features.</li>
+                <li><strong>Visual C++ Redistributables:</strong> Required for many games to ensure proper execution of certain functions.</li>
+                <li><strong>Microsoft .NET Framework:</strong> Some games require this to run certain features or manage game data.</li>
+                <li><strong>Java:</strong> Although less common, some games require Java for specific game engines or tools.</li>
+                <li><strong>Steam:</strong> A must-have for accessing and launching many modern PC games.</li>
+                <li><strong>Game Client (e.g., Epic Games, Origin):</strong> Other platforms like Epic Games Store or Origin are essential for their respective games.</li>
+                <li><strong>GPU Drivers:</strong> Always make sure your graphics drivers are up to date for the best performance and stability.</li>
+            </ul>
+            
+            <h3>Missing DLL Files</h3>
+            <p>Sometimes, games or applications may fail to run properly because certain DLL (Dynamic Link Library) files are missing. These files contain crucial code that games need to run. Missing DLL errors can occur due to corrupted files, incomplete installations, or even incompatible game updates.</p>
+            <p>If you encounter a "Missing DLL" error while trying to run a game, here’s what you can do:</p>
+            <ul>
+                <li><strong>Check the error message:</strong> The error message should tell you which DLL is missing (e.g., "MSVCP140.dll is missing").</li>
+                <li><strong>Download the missing DLL:</strong> You can download the required DLL from trusted websites. Make sure to choose the correct version (32-bit or 64-bit) that matches your system.</li>
+                <li><strong>Reinstall the game:</strong> If the DLL file is corrupted or missing, reinstalling the game may resolve the issue, as the necessary files will be replaced.</li>
+            </ul>
+
+            <p>Here are some common DLL files and where you can download them:</p>
+            <ul>
+                <li><strong>MSVCP140.dll:</strong> Part of the Visual C++ Redistributables, often missing in games that require this runtime. You can download it from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=53587" target="_blank">Microsoft's official site</a>.</li>
+                <li><strong>DirectX DLLs (e.g., d3d11.dll, d3d9.dll):</strong> Essential for rendering games. Download DirectX from the <a href="https://www.microsoft.com/en-us/download/details.aspx?id=35" target="_blank">Microsoft DirectX End-User Runtime Web Installer</a>.</li>
+                <li><strong>vcruntime140.dll:</strong> Another part of Visual C++ Redistributables. You can download it from the same <a href="https://www.microsoft.com/en-us" target="_blank">Microsoft website</a>.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PC Help Hub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.getElementById('theme-body');
+            body.classList.toggle('light-theme');
+        }
+    </script>
+</body>
+</html>
